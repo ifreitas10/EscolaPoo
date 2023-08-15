@@ -10,8 +10,24 @@ public class Turma {
 	private ArrayList<Professor> professores;
 	private ArrayList<Disciplina> disciplinas;
 	
-	void adicionarAluno() {
-		
+	public Turma() {
+		alunos = new ArrayList<Aluno>();
+	}
+	
+	public void adicionarAluno(Aluno aluno) {
+		alunos.add(aluno);
+	}
+	
+	public int quantidadeAlunos() {
+		return alunos.size();
+	}
+	
+	public void excluirAluno(Aluno aluno) {
+		alunos.remove(aluno);
+	}
+	
+	public Aluno getAluno(int posicao) {
+		return alunos.get(posicao);
 	}
 	
 	public String getSigla() {
