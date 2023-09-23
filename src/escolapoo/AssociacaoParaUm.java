@@ -1,4 +1,5 @@
 package escolapoo;
+
 import java.util.Date;
 
 import escola.Aluno;
